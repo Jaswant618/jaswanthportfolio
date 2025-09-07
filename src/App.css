@@ -1,4 +1,4 @@
-/* ---------- Base ---------- */
+
 body, html, #root {
   margin: 0;
   padding: 0;
@@ -6,7 +6,7 @@ body, html, #root {
   height: 100%;
 }
 
-/* Light / Dark themes */
+
 .app.light {
   background: #f9f6ff;
   color: #222;
@@ -16,7 +16,7 @@ body, html, #root {
   color: #eee;
 }
 
-/* Toggle button */
+
 .mode-toggle {
   position: fixed;
   top: 15px;
@@ -30,14 +30,13 @@ body, html, #root {
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
-/* ---------- Sections ---------- */
 section {
   padding: 60px 20px;
   min-height: 100vh;
   transition: all 0.3s ease;
 }
 
-/* ---------- Home ---------- */
+
 .home {
   display: flex;
   justify-content: space-around;
@@ -58,7 +57,7 @@ section {
   font-size: 1.2rem;
 }
 
-/* Menu with hover blur */
+
 .menu {
   display: grid;
   grid-template-columns: repeat(2, 150px);
@@ -83,7 +82,7 @@ section {
   transform: scale(1.05);
 }
 
-/* ---------- About ---------- */
+
 .about-content {
   display: flex;
   align-items: center;
@@ -100,7 +99,7 @@ section {
   border: 3px solid #6c63ff;
 }
 
-/* ---------- Education ---------- */
+
 .edu-list {
   display: flex;
   flex-wrap: wrap;
@@ -155,7 +154,7 @@ section {
   transform: scale(1.05);
 }
 
-/* ---------- Contact ---------- */
+
 .contact-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -184,7 +183,7 @@ section {
   transform: scale(1.05);
 }
 
-/* Back button */
+
 .back {
   margin-bottom: 20px;
   padding: 8px 12px;
@@ -194,7 +193,7 @@ section {
   cursor: pointer;
 }
 
-/* Fun Activities */
+
 .fun-activities {
   margin-top: 20px;
   background: #fff;
@@ -214,7 +213,7 @@ section {
   margin-bottom: 10px;
 }
 
-/* Contact Form */
+
 .contact-form {
   margin-top: 30px;
   background: #fff;
@@ -245,7 +244,7 @@ section {
 .contact-form button:hover {
   background: darkviolet;
 }
-/* ---------- About (Enhanced) ---------- */
+
 .about-heading {
   text-align: center;
   font-size: 2rem;
@@ -277,7 +276,7 @@ section {
   box-shadow: 0px 5px 25px rgba(0,0,0,0.3);
 }
 
-/* Floating Animation */
+
 .floating-img {
   animation: float 3s ease-in-out infinite;
 }
@@ -295,3 +294,32 @@ section {
   line-height: 1.7;
   text-align: justify;
 }
+
+.app.dark .edu-card,
+.app.dark .project-card,
+.app.dark .contact-card,
+.app.dark .contact-form,
+.app.dark .fun-activities {
+  background: #2a2a2a;   
+  color: #eee;          
+  border: 1px solid #444;
+}
+
+.app.dark a {
+  color: #9d8cff; 
+}
+
+.app.dark .menu button {
+  background: #2a2a2a;
+  color: #eee;
+  border: 1px solid #444;
+}
+
+.app.dark .back {
+  border: 1px solid #888;
+  color: #eee;
+}
+.app.dark .home p {
+  color: #ccc;
+}
+

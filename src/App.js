@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 
-// Images
+
 import profilePic from "./profile_pic.jpg";
 import schoolPic from "./school_pic.jpg";
 import interPic from "./inter_pic.jpg";
@@ -15,12 +15,12 @@ function App() {
 
   return (
     <div className={`app ${darkMode ? "dark" : "light"}`}>
-      {/* Dark / Light toggle */}
+   
       <button className="mode-toggle" onClick={() => setDarkMode(!darkMode)}>
         {darkMode ? "🌞" : "🌙"}
       </button>
 
-      {/* ---------------- HOME ---------------- */}
+     
       {activeSection === "home" && (
         <section className="home">
           <div className="intro">
@@ -39,19 +39,19 @@ function App() {
         </section>
       )}
 
-      {/* ---------------- ABOUT ---------------- */}
+      
       {activeSection === "about" && (
         <section className="about">
           <button className="back" onClick={goHome}>← Back to Home</button>
           <h2 className="about-heading">✨ About Me ✨</h2>
 
           <div className="about-wrapper">
-            {/* Floating Profile Picture */}
+           
             <div className="about-pic">
               <img src={profilePic} alt="Profile" className="floating-img" />
             </div>
 
-            {/* About Content */}
+            
             <div className="about-text">
               <p>
                 As a student at the Vellore Institute of Technology (VIT), Chennai, 
@@ -67,7 +67,7 @@ function App() {
             </div>
           </div>
 
-          {/* Fun Activities */}
+        
           <div className="fun-activities">
             <h3>🌟 Fun Activities</h3>
             <ul>
@@ -79,7 +79,7 @@ function App() {
         </section>
       )}
 
-      {/* ---------------- EDUCATION ---------------- */}
+      
       {activeSection === "education" && (
         <section className="education">
           <button className="back" onClick={goHome}>← Back to Home</button>
@@ -104,7 +104,7 @@ function App() {
         </section>
       )}
 
-      {/* ---------------- PROJECTS ---------------- */}
+    
       {activeSection === "projects" && (
         <section className="projects">
           <button className="back" onClick={goHome}>← Back to Home</button>
@@ -126,7 +126,7 @@ function App() {
         </section>
       )}
 
-      {/* ---------------- CONTACT ---------------- */}
+      
       {activeSection === "contact" && (
         <section className="contact">
           <button className="back" onClick={goHome}>← Back to Home</button>
@@ -163,7 +163,7 @@ function App() {
             </div>
           </div>
 
-          {/* Contact Form */}
+         
           <div className="contact-form">
             <h3>Send Me a Message</h3>
             <form>
